@@ -26,6 +26,7 @@
 		DC4B243C16C2787D00976283 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4B243B16C2787D00976283 /* CoreLocation.framework */; };
 		DC4B243E16C2789800976283 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4B243D16C2789800976283 /* MapKit.framework */; };
 		DC4B244016C279B400976283 /* barlong.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4B243F16C279B400976283 /* barlong.png */; };
+		DC4B244216C366AC00976283 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DC4B244116C366AC00976283 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		DC4B243B16C2787D00976283 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DC4B243D16C2789800976283 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DC4B243F16C279B400976283 /* barlong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barlong.png; sourceTree = "<group>"; };
+		DC4B244116C366AC00976283 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		DC4B23F816C273F800976283 = {
 			isa = PBXGroup;
 			children = (
+				DC4B244116C366AC00976283 /* README.md */,
 				DC4B240A16C273F800976283 /* StreetView */,
 				DC4B240316C273F800976283 /* Frameworks */,
 				DC4B240216C273F800976283 /* Products */,
@@ -200,6 +203,7 @@
 				DC4B243416C2741500976283 /* NWViewLocationController.xib in Resources */,
 				DC4B243716C2757400976283 /* pin.png in Resources */,
 				DC4B244016C279B400976283 /* barlong.png in Resources */,
+				DC4B244216C366AC00976283 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
