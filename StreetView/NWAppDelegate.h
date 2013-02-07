@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class NWViewController;
+@class NWViewLocationController;
 
 @interface NWAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) NWViewController *viewController;
+@property (strong, nonatomic) NWViewLocationController *viewController;
 
 @end

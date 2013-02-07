@@ -8,7 +8,7 @@
 
 #import "NWAppDelegate.h"
 
-#import "NWViewController.h"
+#import "NWViewLocationController.h"
 
 @implementation NWAppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[NWViewController alloc] initWithNibName:@"NWViewController" bundle:nil];
+    self.viewController = [[NWViewLocationController alloc] initWithNibName:@"NWViewLocationController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -16,8 +16,16 @@
 		DC4B241716C273F800976283 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4B241616C273F800976283 /* Default.png */; };
 		DC4B241916C273F800976283 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4B241816C273F800976283 /* Default@2x.png */; };
 		DC4B241B16C273F800976283 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4B241A16C273F800976283 /* Default-568h@2x.png */; };
-		DC4B241E16C273F800976283 /* NWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B241D16C273F800976283 /* NWViewController.m */; };
-		DC4B242116C273F800976283 /* NWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4B241F16C273F800976283 /* NWViewController.xib */; };
+		DC4B243016C2741500976283 /* STImageAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B242816C2741500976283 /* STImageAnnotationView.m */; };
+		DC4B243116C2741500976283 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B242A16C2741500976283 /* MapAnnotation.m */; };
+		DC4B243216C2741500976283 /* NWmanager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B242C16C2741500976283 /* NWmanager.m */; };
+		DC4B243316C2741500976283 /* NWViewLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B242E16C2741500976283 /* NWViewLocationController.m */; };
+		DC4B243416C2741500976283 /* NWViewLocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4B242F16C2741500976283 /* NWViewLocationController.xib */; };
+		DC4B243716C2757400976283 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4B243616C2757400976283 /* pin.png */; };
+		DC4B243A16C275AE00976283 /* URLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4B243916C275AE00976283 /* URLConnection.m */; };
+		DC4B243C16C2787D00976283 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4B243B16C2787D00976283 /* CoreLocation.framework */; };
+		DC4B243E16C2789800976283 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4B243D16C2789800976283 /* MapKit.framework */; };
+		DC4B244016C279B400976283 /* barlong.png in Resources */ = {isa = PBXBuildFile; fileRef = DC4B243F16C279B400976283 /* barlong.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +42,21 @@
 		DC4B241616C273F800976283 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DC4B241816C273F800976283 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DC4B241A16C273F800976283 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DC4B241C16C273F800976283 /* NWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWViewController.h; sourceTree = "<group>"; };
-		DC4B241D16C273F800976283 /* NWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWViewController.m; sourceTree = "<group>"; };
-		DC4B242016C273F800976283 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NWViewController.xib; sourceTree = "<group>"; };
+		DC4B242716C2741500976283 /* STImageAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STImageAnnotationView.h; sourceTree = "<group>"; };
+		DC4B242816C2741500976283 /* STImageAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STImageAnnotationView.m; sourceTree = "<group>"; };
+		DC4B242916C2741500976283 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		DC4B242A16C2741500976283 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		DC4B242B16C2741500976283 /* NWmanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWmanager.h; sourceTree = "<group>"; };
+		DC4B242C16C2741500976283 /* NWmanager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWmanager.m; sourceTree = "<group>"; };
+		DC4B242D16C2741500976283 /* NWViewLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWViewLocationController.h; sourceTree = "<group>"; };
+		DC4B242E16C2741500976283 /* NWViewLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWViewLocationController.m; sourceTree = "<group>"; };
+		DC4B242F16C2741500976283 /* NWViewLocationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NWViewLocationController.xib; sourceTree = "<group>"; };
+		DC4B243616C2757400976283 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		DC4B243816C275AE00976283 /* URLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnection.h; sourceTree = "<group>"; };
+		DC4B243916C275AE00976283 /* URLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnection.m; sourceTree = "<group>"; };
+		DC4B243B16C2787D00976283 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DC4B243D16C2789800976283 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DC4B243F16C279B400976283 /* barlong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barlong.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4B243E16C2789800976283 /* MapKit.framework in Frameworks */,
+				DC4B243C16C2787D00976283 /* CoreLocation.framework in Frameworks */,
 				DC4B240516C273F800976283 /* UIKit.framework in Frameworks */,
 				DC4B240716C273F800976283 /* Foundation.framework in Frameworks */,
 				DC4B240916C273F800976283 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +95,8 @@
 		DC4B240316C273F800976283 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC4B243D16C2789800976283 /* MapKit.framework */,
+				DC4B243B16C2787D00976283 /* CoreLocation.framework */,
 				DC4B240416C273F800976283 /* UIKit.framework */,
 				DC4B240616C273F800976283 /* Foundation.framework */,
 				DC4B240816C273F800976283 /* CoreGraphics.framework */,
@@ -83,11 +107,19 @@
 		DC4B240A16C273F800976283 /* StreetView */ = {
 			isa = PBXGroup;
 			children = (
+				DC4B243816C275AE00976283 /* URLConnection.h */,
+				DC4B243916C275AE00976283 /* URLConnection.m */,
+				DC4B242716C2741500976283 /* STImageAnnotationView.h */,
+				DC4B242816C2741500976283 /* STImageAnnotationView.m */,
+				DC4B242916C2741500976283 /* MapAnnotation.h */,
+				DC4B242A16C2741500976283 /* MapAnnotation.m */,
+				DC4B242B16C2741500976283 /* NWmanager.h */,
+				DC4B242C16C2741500976283 /* NWmanager.m */,
+				DC4B242D16C2741500976283 /* NWViewLocationController.h */,
+				DC4B242E16C2741500976283 /* NWViewLocationController.m */,
+				DC4B242F16C2741500976283 /* NWViewLocationController.xib */,
 				DC4B241316C273F800976283 /* NWAppDelegate.h */,
 				DC4B241416C273F800976283 /* NWAppDelegate.m */,
-				DC4B241C16C273F800976283 /* NWViewController.h */,
-				DC4B241D16C273F800976283 /* NWViewController.m */,
-				DC4B241F16C273F800976283 /* NWViewController.xib */,
 				DC4B240B16C273F800976283 /* Supporting Files */,
 			);
 			path = StreetView;
@@ -96,6 +128,8 @@
 		DC4B240B16C273F800976283 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC4B243F16C279B400976283 /* barlong.png */,
+				DC4B243616C2757400976283 /* pin.png */,
 				DC4B240C16C273F800976283 /* StreetView-Info.plist */,
 				DC4B240D16C273F800976283 /* InfoPlist.strings */,
 				DC4B241016C273F800976283 /* main.m */,
@@ -163,7 +197,9 @@
 				DC4B241716C273F800976283 /* Default.png in Resources */,
 				DC4B241916C273F800976283 /* Default@2x.png in Resources */,
 				DC4B241B16C273F800976283 /* Default-568h@2x.png in Resources */,
-				DC4B242116C273F800976283 /* NWViewController.xib in Resources */,
+				DC4B243416C2741500976283 /* NWViewLocationController.xib in Resources */,
+				DC4B243716C2757400976283 /* pin.png in Resources */,
+				DC4B244016C279B400976283 /* barlong.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +212,11 @@
 			files = (
 				DC4B241116C273F800976283 /* main.m in Sources */,
 				DC4B241516C273F800976283 /* NWAppDelegate.m in Sources */,
-				DC4B241E16C273F800976283 /* NWViewController.m in Sources */,
+				DC4B243016C2741500976283 /* STImageAnnotationView.m in Sources */,
+				DC4B243116C2741500976283 /* MapAnnotation.m in Sources */,
+				DC4B243216C2741500976283 /* NWmanager.m in Sources */,
+				DC4B243316C2741500976283 /* NWViewLocationController.m in Sources */,
+				DC4B243A16C275AE00976283 /* URLConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +229,6 @@
 				DC4B240E16C273F800976283 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DC4B241F16C273F800976283 /* NWViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC4B242016C273F800976283 /* en */,
-			);
-			name = NWViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
