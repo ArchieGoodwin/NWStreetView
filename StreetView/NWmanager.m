@@ -23,37 +23,37 @@
 {
     NSString *loc = [NSString stringWithFormat:@"%.10f,%.10f&", location.latitude, location.longitude];
     NWisStreetViewCompletionBlock completeBlock = [completionBlock copy];
-
+    
     
     NSString *connectionString = [NSString stringWithFormat:@"http://cbk0.google.com/cbk?output=json&ll=%@", loc];
     NSLog(@"connect to: %@",connectionString);
     
     [URLConnection asyncConnectionWithURLString:connectionString
                                 completionBlock:^(NSData *data, NSURLResponse *response)
-                                {
-                                    NSLog(@"Data length %d", [data length]);
-                                    NSMutableDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                                    //NSLog(@"%@", json);
-                                    
-                                    if([json objectForKey:@"Location"] == nil)
-                                        completeBlock(@"", nil);
-                                    
-                                    //NSLog(@"panoId: %@",[[json objectForKey:@"Location"] objectForKey:@"panoId"]);
-                                    
-                                    completeBlock([[json objectForKey:@"Location"] objectForKey:@"panoId"], nil);
-                                }
-                                errorBlock:^(NSError *error)
-                                {
-                                                                     
-                                    NSMutableDictionary* details = [NSMutableDictionary dictionary];
-                                    [details setValue:[error description] forKey:NSLocalizedDescriptionKey];
-                                    // populate the error object with the details
-                                    NSError *err = [NSError errorWithDomain:@"world" code:200 userInfo:details];
-                                    
-                                    completeBlock(NO, err);
-                                    
-                                    
-                                }];
+     {
+         NSLog(@"Data length %d", [data length]);
+         NSMutableDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+         //NSLog(@"%@", json);
+         
+         if([json objectForKey:@"Location"] == nil)
+             completeBlock(@"", nil);
+         
+         //NSLog(@"panoId: %@",[[json objectForKey:@"Location"] objectForKey:@"panoId"]);
+         
+         completeBlock([[json objectForKey:@"Location"] objectForKey:@"panoId"], nil);
+     }
+                                     errorBlock:^(NSError *error)
+     {
+         
+         NSMutableDictionary* details = [NSMutableDictionary dictionary];
+         [details setValue:[error description] forKey:NSLocalizedDescriptionKey];
+         // populate the error object with the details
+         NSError *err = [NSError errorWithDomain:@"world" code:200 userInfo:details];
+         
+         completeBlock(NO, err);
+         
+         
+     }];
 }
 
 
